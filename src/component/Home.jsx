@@ -16,16 +16,14 @@ function Home() {
               .filter((data) => data.hometype === "home-first-big")
               .map((item, index) => {
                 return (
-                  <>
-                    <div key={index} className=" home-first-big-inner ">
-                      <div className="home-first-big-img">
-                        <img id="h-first-big" src={item.images} alt="img" />
-                      </div>
-                      <div className="home-first-big-text">
-                        <h3>{item.heading}</h3>
-                      </div>
+                  <div key={index} className=" home-first-big-inner ">
+                    <div className="home-first-big-img">
+                      <img id="h-first-big" src={item.images} alt="img" />
                     </div>
-                  </>
+                    <div className="home-first-big-text">
+                      <h3>{item.heading}</h3>
+                    </div>
+                  </div>
                 );
               })}
           </div>
@@ -34,20 +32,14 @@ function Home() {
               .filter((data) => data.type === "home-first-main-side")
               .map((item, index) => {
                 return (
-                  <>
-                    <div key={index} className=" home-first-big-side-inner ">
-                      <div className="home-first-big-side-img">
-                        <img
-                          id="home-big-side-img"
-                          src={item.images}
-                          alt="img"
-                        />
-                      </div>
-                      <div className="home-first-big-side-text">
-                        <h3>{item.heading}</h3>
-                      </div>
+                  <div key={index} className=" home-first-big-side-inner ">
+                    <div className="home-first-big-side-img">
+                      <img id="home-big-side-img" src={item.images} alt="img" />
                     </div>
-                  </>
+                    <div className="home-first-big-side-text">
+                      <h3>{item.heading}</h3>
+                    </div>
+                  </div>
                 );
               })}
           </div>
@@ -61,17 +53,15 @@ function Home() {
               .filter((data) => data.type === "thelatest")
               .map((item, index) => {
                 return (
-                  <>
-                    <div key={index} className="home-block2-inner">
-                      <div className="h-block2-img">
-                        <img src={item.images} alt="img" />
-                      </div>
-                      <div className="h-block2-img-text">
-                        <h3>{item.heading}</h3>
-                        <p>{item.description}</p>
-                      </div>
+                  <div key={index} className="home-block2-inner">
+                    <div className="h-block2-img">
+                      <img src={item.images} alt="img" />
                     </div>
-                  </>
+                    <div className="h-block2-img-text">
+                      <h3>{item.heading}</h3>
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
                 );
               })}
           </div>
@@ -109,10 +99,10 @@ function Home() {
                 .filter((data) => data.story === "homestory")
                 .map((item, index) => {
                   return (
-                    <>
+                    <div key={index}>
                       <hr className="hr" />
                       <div className="h-block3-2block">
-                        <div className="h-block3-2block-img" key={index}>
+                        <div className="h-block3-2block-img">
                           <img
                             id="h-block3-down-img"
                             src={item.images}
@@ -127,7 +117,7 @@ function Home() {
                           <p>Bollywood {item.date}</p>
                         </div>
                       </div>
-                    </>
+                    </div>
                   );
                 })}
             </div>
@@ -151,11 +141,11 @@ function Home() {
                   .filter((data) => data.story === "techbelowtop")
                   .map((item, index) => {
                     return (
-                      <>
+                      <div key={index}>
                         <hr className="hr" />
                         <div children="beloptop-main">
                           <div className="belowtop-block">
-                            <div className="data-block belowtop" key={index}>
+                            <div className="data-block belowtop">
                               <img
                                 id="belowtop-img"
                                 src={item.images}
@@ -175,7 +165,7 @@ function Home() {
                             <div className="div-num">{item.storynum}</div>
                           </div>
                         </div>
-                      </>
+                      </div>
                     );
                   })}
               </div>
@@ -194,16 +184,14 @@ function Home() {
                 .filter((data) => data.type === "latest-story1")
                 .map((item, index) => {
                   return (
-                    <>
-                      <div className="latest-story" key={index}>
-                        <div className="latest-story-text">
-                          <h3>{item.heading}</h3>
-                          <p>{item.description}</p>
-                        </div>
-
-                        <p>Fitness {item.date}</p>
+                    <div className="latest-story" key={index}>
+                      <div className="latest-story-text">
+                        <h3>{item.heading}</h3>
+                        <p>{item.description}</p>
                       </div>
-                    </>
+
+                      <p>Fitness {item.date}</p>
+                    </div>
                   );
                 })}
             </div>
@@ -213,15 +201,13 @@ function Home() {
                 .filter((data) => data.type === "latest-story2")
                 .map((item, index) => {
                   return (
-                    <>
-                      <div className="latest-story" key={index}>
-                        <div className="latest-story-text">
-                          <h3>{item.heading}</h3>
-                          <p>{item.description}</p>
-                        </div>
-                        <p>Fitness {item.date}</p>
+                    <div className="latest-story" key={index}>
+                      <div className="latest-story-text">
+                        <h3>{item.heading}</h3>
+                        <p>{item.description}</p>
                       </div>
-                    </>
+                      <p>Fitness {item.date}</p>
+                    </div>
                   );
                 })}
             </div>
@@ -231,15 +217,13 @@ function Home() {
                 .filter((data) => data.type === "latest-story3")
                 .map((item, index) => {
                   return (
-                    <>
-                      <div className="latest-story" key={index}>
-                        <div className="latest-story-text">
-                          <h3>{item.heading}</h3>
-                          <p>{item.description}</p>{" "}
-                        </div>
-                        <p>Fitness {item.date}</p>
+                    <div className="latest-story" key={index}>
+                      <div className="latest-story-text">
+                        <h3>{item.heading}</h3>
+                        <p>{item.description}</p>{" "}
                       </div>
-                    </>
+                      <p>Fitness {item.date}</p>
+                    </div>
                   );
                 })}
             </div>
