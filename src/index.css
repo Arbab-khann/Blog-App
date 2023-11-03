@@ -1164,7 +1164,6 @@ a {
   }
   .latest-story-text p,
   .latest-story-text h3 {
-    border: 2px solid red;
     width: 100% !important;
   }
   #tech-main-img img {
