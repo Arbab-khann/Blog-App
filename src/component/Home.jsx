@@ -143,35 +143,9 @@ function Home() {
             <hr className="hr-top" />
             <div className="ad-video">
               {/* <h1>Youtube Embed</h1> */}
-              <YoutubeEmbed embedId="rokGy0huYEA" />
+              <YoutubeEmbed embedId="vgI1DbH1gFc" />
             </div>
             <div className="story-block" id="h-b3-left-topstory">
-              {/* {data
-                .filter((data) => data.story === "techtop")
-                .map((item, index) => {
-                  return (
-                    <>
-                      <div className="data-block mainstory" key={index}>
-                        <div className="mainstory-INNER">
-                          <img
-                            id="story1-img"
-                            src={item.images}
-                            alt="pic"
-                            height={100}
-                            width={150}
-                          />
-                          <div className="topstory">
-                            <div className="data-block-text topstory-text">
-                              <h3>{item.heading}</h3>
-                              <p>Bollywood {item.date}</p>
-                            </div>
-                            <div className="div-num">{item.storynum}</div>
-                          </div>
-                        </div>
-                      </div>
-                    </>
-                  );
-                })} */}
               <div className="data-main-bock belowtop-main home-story-left">
                 {data
                   .filter((data) => data.story === "techbelowtop")
