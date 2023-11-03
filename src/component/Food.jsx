@@ -49,7 +49,7 @@ function Food() {
             })
             .slice(0, article)}
           <button className="load-more" onClick={handleloading}>
-            load more
+            ⬇ load more
           </button>
         </div>
         <div className="story-block">

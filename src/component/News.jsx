@@ -31,12 +31,14 @@ function Technology() {
                       className="dynamic-links"
                       to={`/details/${item.id}`}
                     >
-                      <img
-                        src={item.images}
-                        alt="pic"
-                        height={100}
-                        width={150}
-                      />
+                      <div id="tech-main-img">
+                        <img
+                          src={item.images}
+                          alt="pic"
+                          height={100}
+                          width={150}
+                        />
+                      </div>
                       <div className="data-block-text">
                         <h3>{item.heading}</h3>
                         <p>{item.description}</p>
@@ -50,7 +52,7 @@ function Technology() {
             })
             .slice(0, article)}
           <button className="load-more" onClick={handleloading}>
-            load more
+            ⬇ load more
           </button>
         </div>
         <div className="story-block">
