@@ -31,10 +31,11 @@ function Dynamiccompo() {
           ⬅ Back
         </button>
         <div className="dynamic-header-name">
-          <div className="dynthe">Thee</div>
+          <div className="dynthe">The</div>
           <div className="dynsiren">Siren</div>
         </div>
       </div>
+      <hr />
       {dynamicdata
         .filter((data) => data.id === id)
         .map((item, index) => {
@@ -61,7 +62,7 @@ function Dynamiccompo() {
                       <img id="userimg" src={img} alt="img" />
                       <div>
                         <p>Arbab khan</p>
-                        <p>Sep 20, 2023 16 min read</p>
+                        <p className="userimg-date">Sep 20, 2023 16 min read</p>
                       </div>
                     </div>
                     <div className="user-social">
@@ -75,16 +76,13 @@ function Dynamiccompo() {
                     <img className="dynamic-img" src={item.images} alt="pic" />
                     <p>{item.description}</p>
                   </div>
-                  {/* <button
-                    className="dynamic-btn"
-                    type="submit"
-                    onClick={() => navi(-1)}
-                  >
-                    Back
-                  </button> */}
+
                   <div className="middle-below-block">
+                    <div>
+                      <hr className="dyn-down-hr" />
+                    </div>
                     <div className="middle-below-clap-block">
-                      <span className="clap-inner">
+                      <span className="clap-inner down-clap-inner">
                         <img id="cimg" src={clapimg} alt="img" />
                         9.8k
                       </span>
@@ -94,16 +92,19 @@ function Dynamiccompo() {
                         <img id="userimg1" src={img} alt="img" />
                         <div>
                           <p>Arbab khan</p>
-                          <p>Sep 20, 2023 16 min read</p>
+                          <p className="userimg-date">
+                            Sep 20, 2023 16 min read
+                          </p>
                         </div>
                       </div>
+                      <hr />
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="more-from">
-                <h2>More From Siren</h2>
+                <h2 className="more-from-heading">More From Siren</h2>
                 <hr />
                 <div className="more-from-container">
                   <div className="div1">
@@ -112,13 +113,17 @@ function Dynamiccompo() {
                       key={dynamicdata[genId1 - 1].id}
                     >
                       <img src={dynamicdata[genId1 - 1].images} alt="img" />
-                      <h3>{dynamicdata[genId1 - 1].heading}</h3>
+                      <div id="more-from-headtext">
+                        <h3>{dynamicdata[genId1 - 1].heading}</h3>
+                      </div>
                     </div>
-                    <div className="userdetails">
+                    <div className="userdetails divuserdetails">
                       <img id="userimg2" src={img} alt="img" />
                       <div>
                         <p>Arbab khan</p>
-                        <p>Sep 20, 2023 16 min read</p>
+                        <p className="userimg-date divuserdetails-p">
+                          Sep 20, 2023 16 min read
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -128,13 +133,17 @@ function Dynamiccompo() {
                       key={dynamicdata[genId2 - 1].id}
                     >
                       <img src={dynamicdata[genId2 - 1].images} alt="img" />
-                      <h3>{dynamicdata[genId2 - 1].heading}</h3>
+                      <div id="more-from-headtext">
+                        <h3>{dynamicdata[genId2 - 1].heading}</h3>
+                      </div>
                     </div>
-                    <div className="userdetails">
+                    <div className="userdetails divuserdetails">
                       <img id="userimg2" src={img} alt="img" />
                       <div>
                         <p>Arbab khan</p>
-                        <p>Sep 20, 2023 16 min read</p>
+                        <p className="userimg-date divuserdetails-p">
+                          Sep 20, 2023 16 min read
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -144,13 +153,17 @@ function Dynamiccompo() {
                       key={dynamicdata[genId3 - 1].id}
                     >
                       <img src={dynamicdata[genId3 - 1].images} alt="img" />
-                      <h3>{dynamicdata[genId3 - 1].heading}</h3>
-                    </div>{" "}
-                    <div className="userdetails">
+                      <div id="more-from-headtext">
+                        <h3>{dynamicdata[genId3 - 1].heading}</h3>
+                      </div>
+                    </div>
+                    <div className="userdetails divuserdetails">
                       <img id="userimg2" src={img} alt="img" />
                       <div>
                         <p>Arbab khan</p>
-                        <p>Sep 20, 2023 16 min read</p>
+                        <p className="userimg-date divuserdetails-p">
+                          Sep 20, 2023 16 min read
+                        </p>
                       </div>
                     </div>
                   </div>

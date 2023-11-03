@@ -31,15 +31,17 @@ function Hollywood() {
                       className="dynamic-links"
                       to={`/details/${item.id}`}
                     >
-                      <img
-                        src={item.images}
-                        alt="pic"
-                        height={100}
-                        width={150}
-                      />
+                      <div className="data-block-img-block">
+                        <img
+                          src={item.images}
+                          alt="pic"
+                          height={100}
+                          width={150}
+                        />
+                      </div>
                       <div className="data-block-text">
                         <h3>{item.heading}</h3>
-                        <p>{item.description}</p>
+                        <p id="data-block-text-p">{item.description}</p>
                         <p>Travel {item.date}</p>
                       </div>
                     </NavLink>
@@ -62,14 +64,8 @@ function Hollywood() {
               return (
                 <>
                   <div className="data-block mainstory" key={index}>
-                    <div>
-                      <img
-                        id="story1-img"
-                        src={item.images}
-                        alt="pic"
-                        height={100}
-                        width={150}
-                      />
+                    <div className="story-inner-block">
+                      <img id="story1-img" src={item.images} alt="pic" />
                       <div className="topstory">
                         <div className="data-block-text topstory-text">
                           <h3>{item.heading}</h3>
@@ -89,9 +85,9 @@ function Hollywood() {
               .map((item, index) => {
                 return (
                   <>
-                    <div children="beloptop-main">
+                    <div children="beloptop-main" key={index}>
                       <div className="belowtop-block">
-                        <div className="data-block belowtop" key={index}>
+                        <div className="data-block belowtop">
                           <img
                             id="belowtop-img"
                             src={item.images}

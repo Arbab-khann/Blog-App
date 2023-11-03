@@ -62,7 +62,7 @@ function Technology() {
               return (
                 <>
                   <div className="data-block mainstory" key={index}>
-                    <div>
+                    <div className="story-inner-block">
                       <img
                         id="story1-img"
                         src={item.images}

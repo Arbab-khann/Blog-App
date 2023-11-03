@@ -80,7 +80,7 @@ function Home() {
           <div className="home-block3-right">
             <h2>Latest Articles</h2>
             <hr className="hr-top" />
-            <div className="h-block3-right-firstblock">
+            {/* <div className="h-block3-right-firstblock">
               {data
                 .filter((data) => data.story === "hollytop")
                 .map((item, index) => {
@@ -99,14 +99,14 @@ function Home() {
                         </div>
                       </div>
 
-                      {/* <hr className="hr-3" /> */}
+                      
                     </>
                   );
                 })}
-            </div>
+            </div> */}
             <div className="h-block3-right-2block">
               {data
-                .filter((data) => data.story === "techbelowtop")
+                .filter((data) => data.story === "homestory")
                 .map((item, index) => {
                   return (
                     <>
@@ -146,15 +146,13 @@ function Home() {
               <YoutubeEmbed embedId="rokGy0huYEA" />
             </div>
             <div className="story-block" id="h-b3-left-topstory">
-              <h2>Top Post</h2>
-              <hr className="hr-top" />
-              {data
+              {/* {data
                 .filter((data) => data.story === "techtop")
                 .map((item, index) => {
                   return (
                     <>
                       <div className="data-block mainstory" key={index}>
-                        <div>
+                        <div className="mainstory-INNER">
                           <img
                             id="story1-img"
                             src={item.images}
@@ -173,14 +171,13 @@ function Home() {
                       </div>
                     </>
                   );
-                })}
-              <div className="data-main-bock belowtop-main">
+                })} */}
+              <div className="data-main-bock belowtop-main home-story-left">
                 {data
                   .filter((data) => data.story === "techbelowtop")
                   .map((item, index) => {
                     return (
                       <>
-                        {" "}
                         <hr className="hr" />
                         <div children="beloptop-main">
                           <div className="belowtop-block">
@@ -195,7 +192,10 @@ function Home() {
                               <div className="data-block-text belowtop-text">
                                 <h3>{item.heading}</h3>
 
-                                <p>Bollywood {item.date}</p>
+                                <p>
+                                  {item.categories}
+                                  {item.date}
+                                </p>
                               </div>
                             </div>
                             <div className="div-num">{item.storynum}</div>
@@ -213,7 +213,7 @@ function Home() {
             <h2>Latest Story</h2>
             <hr className="hr-top" />
           </div>
-          <hr />
+
           <div className="story-container">
             <div className="latest-story1">
               {data
@@ -233,6 +233,7 @@ function Home() {
                   );
                 })}
             </div>
+            <hr className="hidden" />
             <div className="latest-story2">
               {data
                 .filter((data) => data.type === "latest-story2")
@@ -242,7 +243,7 @@ function Home() {
                       <div className="latest-story" key={index}>
                         <div className="latest-story-text">
                           <h3>{item.heading}</h3>
-                          <p>{item.description}</p>{" "}
+                          <p>{item.description}</p>
                         </div>
                         <p>Fitness {item.date}</p>
                       </div>
@@ -250,6 +251,7 @@ function Home() {
                   );
                 })}
             </div>
+            <hr className="hidden" />
             <div className="latest-story3">
               {data
                 .filter((data) => data.type === "latest-story3")

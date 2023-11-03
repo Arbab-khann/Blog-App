@@ -32,6 +32,8 @@ function Storedata(props) {
     },
     {
       id: "3",
+      story: "techbelowtop",
+      storynum: "1",
       heading:
         "Gadar 2 Trailer launch event: Sunny Deol, Ameesha Patel make a smashing entry as Tara Singh and Sakina with Dhol and truck [VIEW PICS]",
       images:
@@ -54,6 +56,7 @@ function Storedata(props) {
     },
     {
       id: "5",
+      story: "homestory",
       heading:
         "Ranveer Singh, Alia Bhatt song Jhumka Gira Re has a deep connection with Amitabh Bachchan",
       images:
@@ -168,6 +171,7 @@ function Storedata(props) {
     },
     {
       id: "15",
+
       story: "belowtop",
       storynum: "4",
       heading:
@@ -341,6 +345,7 @@ function Storedata(props) {
     },
     {
       id: "30",
+      story: "homestory",
       heading:
         "Sony’s Live-Action Spider-Verse Movies Need To Learn From James Gunn’s DCU",
       images:
@@ -379,6 +384,7 @@ function Storedata(props) {
     },
     {
       id: "33",
+      story: "homestory",
       heading:
         "Apple’s App Store tightens up on user privacy with new rules for app developers",
       images:
@@ -633,6 +639,7 @@ function Storedata(props) {
     },
     {
       id: "56",
+      story: "homestory",
       heading: "Why Running Does Not (Always) Burn Fat",
       images: "https://www.bornfitness.com/wp-content/uploads/2021/05/2-7.png",
       description:

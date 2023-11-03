@@ -24,7 +24,6 @@ function Bollywood() {
           {data
             .filter((data) => data.categories === "Bollywood")
             .map((item, index) => {
-              console.log(item.id);
               return (
                 <>
                   <div className="data-block" key={index}>
@@ -32,12 +31,14 @@ function Bollywood() {
                       className="dynamic-links"
                       to={`/details/${item.id}`}
                     >
-                      <img
-                        src={item.images}
-                        alt="pic"
-                        height={100}
-                        width={150}
-                      />
+                      <div className="data-block-text-img">
+                        <img
+                          src={item.images}
+                          alt="pic"
+                          height={100}
+                          width={150}
+                        />
+                      </div>
                       <div className="data-block-text">
                         <h3>{item.heading}</h3>
                         <p>{item.description}</p>
@@ -63,7 +64,7 @@ function Bollywood() {
               return (
                 <>
                   <div className="data-block mainstory" key={index}>
-                    <div>
+                    <div className="story-inner-block">
                       <img
                         id="story1-img"
                         src={item.images}
