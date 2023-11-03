@@ -523,12 +523,12 @@ body {
 
 .home-block2-main {
   width: 100%;
-
+  margin-top: 1.5rem;
   /* display: flex;
   flex-direction: row; */
 }
 .home-block2 {
-  margin: 1rem 0rem;
+  margin: 2rem 0rem;
   /* border: 2px solid rgb(56, 202, 23); */
   display: flex;
   flex-direction: row;
@@ -717,7 +717,7 @@ body {
   width: 100%;
 }
 .Latest-Story-top {
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .story-container {
