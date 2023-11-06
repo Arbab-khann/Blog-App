@@ -31,12 +31,14 @@ function Fitness() {
                       className="dynamic-links"
                       to={`/details/${item.id}`}
                     >
-                      <img
-                        src={item.images}
-                        alt="pic"
-                        height={100}
-                        width={150}
-                      />
+                      <div className="data-block-text-img">
+                        <img
+                          src={item.images}
+                          alt="pic"
+                          height={100}
+                          width={150}
+                        />
+                      </div>
                       <div className="data-block-text">
                         <h3>{item.heading}</h3>
                         <p>{item.description}</p>

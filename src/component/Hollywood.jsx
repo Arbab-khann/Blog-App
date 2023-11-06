@@ -31,7 +31,7 @@ function Hollywood() {
                       className="dynamic-links"
                       to={`/details/${item.id}`}
                     >
-                      <div className="data-block-img-block">
+                      <div className="data-block-text-img">
                         <img
                           src={item.images}
                           alt="pic"

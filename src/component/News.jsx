@@ -31,7 +31,7 @@ function Technology() {
                       className="dynamic-links"
                       to={`/details/${item.id}`}
                     >
-                      <div id="tech-main-img">
+                      <div className="data-block-text-img">
                         <img
                           src={item.images}
                           alt="pic"
